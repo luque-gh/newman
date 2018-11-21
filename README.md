@@ -1,16 +1,19 @@
-# Introduction 
+# Newman alternative
+## Introduction 
 The objective of this project is to reproduce and validate some claims made by Joseph Newman about his energy machine.
-However, this will be done in a smaller scale compared to the big machine Newman demonstrated.
-This design follow Newman's basic idea to maximize de amount of copper used in the coil.
-The machine runs in a much lower voltage (90-150 VDC) compared to the one demonstrated by Newman (1500+ VDC).
-This lower voltage makes possible to use mosfet transistor and zener diodes instead of mechanical commutator.
-The duty cycle and frequency can be adjusted using 555 timer to optimize the performance of the machine.
+This will be done in a smaller scale compared to the big machine Newman demonstrated.
+The machine follows most of Newman's design described in his book.
+However, it runs in a much lower voltage (90-150 VDC) compared to the one demonstrated by Newman (1500+ VDC).
+This lower voltage makes possible to use mosfet transistor and zener diodes to replace the mechanical commutator.
+The duty cycle and frequency are adjustable to optimize the performance through a 555 timer.
 Since Newman's claims timing is very critical for his invention, this gives much more flexibility to optimize compared to a mechanical commutator.
 
-# Working
+## Working
+Infrared emitter and sensor are used inhibit or activate the FIRING/BLANK/SHORT OUT cycle depending on current rotor position.
 This machine uses a solid-state circuit with a 555 timer to alternate between FIRING (HIGH) and BLANK / SHORT OUT (LOW).
-An infrared emitter and sensor are used to check if the current rotor rotation should activate or deactivate the FIRING/BLANK/SHORT OUT cycle.
-When activated, the first phase is FIRING which enable both mosfets to energise the coil through the battery bank.
+
+### FIRING/BLANK/SHORT OUT Cycle
+The first phase is FIRING which enable both mosfets to energise the coil through the battery bank.
 After that, the BLANK phase begins and cut the supply energy from the batteries, collapsing the field from the coil.
 The BLANK phase only ends when the voltage difference in the coil is above the reverse zener voltage.
 When this voltage is achieved, the SHORT OUT begins.
