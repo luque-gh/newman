@@ -1,30 +1,37 @@
 # Newman alternative
 ## Introduction 
-The objective of this project is to reproduce and validate some claims made by Joseph Newman about his energy machine.
-This will be done in a smaller scale compared to the big machine Newman demonstrated.
+The objective of this project is to **reproduce some claims made by Joseph Newman about his energy machine**.
+This will be done in a **smaller scale** compared to the big machine Newman demonstrated.
 The machine follows most of Newman's design described in his book.
-However, it runs in a much lower voltage (90-150 VDC) compared to the one demonstrated by Newman (1500+ VDC).
-This lower voltage makes possible to use mosfet transistor and zener diodes to replace the mechanical commutator.
-The duty cycle and frequency are adjustable to optimize the performance through a 555 timer.
-Since Newman's claims timing is very critical for his invention, this gives much more flexibility to optimize compared to a mechanical commutator.
+
+However, it runs in a much lower voltage **(90-150 VDC)** compared to the one demonstrated by Newman (1500+ VDC).
+This lower voltage makes possible to use **mosfet transistor and zener diodes** to replace the mechanical commutator.
+**Duty cycle and frequency are adjustable** to optimize the performance through a **555 timer**.
+Since **Newman's claims timing is very critical** for his invention, this gives much more flexibility to optimize compared to a mechanical commutator.
 
 ## Working
 Infrared emitter and sensor are used inhibit or activate the FIRING/BLANK/SHORT OUT cycle depending on current rotor position.
 This machine uses a solid-state circuit with a 555 timer to alternate between FIRING (HIGH) and BLANK / SHORT OUT (LOW).
 
 ### FIRING/BLANK/SHORT OUT Cycle
-The first phase is FIRING which enable both mosfets to energise the coil through the battery bank.
-After that, the BLANK phase begins and cut the supply energy from the batteries, collapsing the field from the coil.
-The BLANK phase only ends when the voltage difference in the coil is above the reverse zener voltage.
-When this voltage is achieved, the SHORT OUT begins.
-After that, a new FIRING phase begins reconnecting the battery bank to the coil.
+The first phase is **FIRING** which enable both mosfets to energise the coil through the battery bank.
+After that, the **BLANK** phase begins and cut the supply energy from the batteries, collapsing the field from the coil.
+The **BLANK** phase only ends when the voltage difference in the coil is above the reverse zener voltage.
+When this voltage is achieved, the **SHORT OUT** begins.
+After that, a new **FIRING** phase begins reconnecting the battery bank to the coil.
+
+## Schematic
+
+Created using Fritzing 0.9.3.
+
+Available in **/schematic**.
 
 ## Test Setup
-* ~110V VDC input voltage (twelve 9V zinc-carbon batteries).
+* **~110V VDC** input voltage (twelve 9V zinc-carbon batteries).
 * 9V zinc-cabon battery for circuit controller.
-* 2-channels Rigol DS1052E Oscilloscope. 
-** Channel A (Yellow) - Batteries voltage
-** Channel B (Blue) - Voltage across 10Ohm resistor before ground (=Amps / 10).
+* 2-channels **Rigol DS1052E** Oscilloscope. 
+	* Channel A (Yellow) - Batteries voltage
+	* Channel B (Blue) - Voltage across 10Ohm resistor before ground (=Amps / 10).
 
 ## Results
 
@@ -81,5 +88,3 @@ After that, a new FIRING phase begins reconnecting the battery bank to the coil.
 * 1+ x IR TIL32
 * 1+ x IR TIL78
 * 13+ x 9V Zinc-Carbon Battery
-
-
