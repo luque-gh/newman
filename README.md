@@ -10,8 +10,8 @@ This lower voltage makes possible to use **mosfet transistor and zener diodes** 
 Since **Newman's claims timing is very critical** for his invention, this gives much more flexibility to optimize compared to a mechanical commutator.
 
 ## Working
-Infrared emitter and sensor are used inhibit or activate the FIRING/BLANK/SHORT OUT cycle depending on current rotor position.
-This machine uses a solid-state circuit with a 555 timer to alternate between FIRING (HIGH) and BLANK / SHORT OUT (LOW).
+**Infrared emitter and sensor are used inhibit or activate the FIRING/BLANK/SHORT OUT cycle** depending on current rotor position.
+This machine uses **a solid-state circuit with a 555 timer** to alternate between **FIRING (HIGH)** and **BLANK / SHORT OUT (LOW)**.
 
 ### FIRING/BLANK/SHORT OUT Cycle
 The first phase is **FIRING** which enable both mosfets to energise the coil through the battery bank.
@@ -22,7 +22,7 @@ After that, a new **FIRING** phase begins reconnecting the battery bank to the c
 
 ## Schematic
 
-Created using Fritzing 0.9.3.
+Created using **Fritzing 0.9.3**.
 
 Available in **/schematic**.
 
