@@ -2,9 +2,9 @@
 ## Introduction 
 The objective of this project is to **reproduce some claims made by Joseph Newman about his energy machine**.
 This will be done in a **smaller scale** compared to the big machine Newman demonstrated.
-The machine follows most of Newman's design described in his book.
+This machine follows most of Newman's design described in his book.
 
-However, it runs in a much lower voltage **(90-150 VDC)** compared to the one demonstrated by Newman (1500+ VDC).
+However, it runs in a much lower voltage **~190VDC** compared to the one demonstrated by Newman (1500+ VDC).
 This lower voltage makes possible to use **mosfet transistor and zener diodes** to replace the mechanical commutator.
 **Duty cycle and frequency are adjustable** to optimize the performance through a **555 timer**.
 Since **Newman's claims timing is very critical** for his invention, this gives much more flexibility to optimize compared to a mechanical commutator.
@@ -20,6 +20,9 @@ The **BLANK** phase only ends when the voltage difference in the coil is above t
 When this voltage is achieved, the **SHORT OUT** begins.
 After that, a new **FIRING** phase begins reconnecting the battery bank to the coil.
 
+The cycle is activated in the range 135° to 225° and determined by the printed part **Commutator-Disc-90Deg**.
+Each activation range requires an independent coil and circuit. In the test setup and videos, only one coil is used, but it is possibile to use two coils and activate in the range -45° to 45° as well.
+
 ## Schematic
 
 Created using **Fritzing 0.9.3**.
@@ -27,8 +30,9 @@ Created using **Fritzing 0.9.3**.
 Available in **/schematic**.
 
 ## Test Setup
-* **~110V VDC** input voltage (twelve 9V zinc-carbon batteries).
-* 9V zinc-cabon battery for circuit controller.
+* One coil activated in the range 135° to 225°.
+* **~190V VDC** input voltage for the coil (20 x 9V zinc-carbon batteries).
+* 9V zinc-cabon battery for the circuit controller.
 * 2-channels **Rigol DS1052E** Oscilloscope. 
 	* Channel A (Yellow) - Batteries voltage
 	* Channel B (Blue) - Voltage across 10Ohm resistor before ground (=Amps / 10).
@@ -55,7 +59,7 @@ Available in **/schematic**.
 ![Image of Voltage in Full-Cycle](/results/Feedback-Cycle-W.png)
 
 
-## Building
+## Building Instructions
 
 ### Requirement
 * 3D Printer
@@ -67,6 +71,11 @@ Available in **/schematic**.
 * 5Kg AWG 28 Copper 
 * 500g PLA or ABS 
 * 22AWG Solid core wire
+
+Print all STL files in the directory **/model**.
+Put together **Coil.Inner and Coil.Outer** and insert in both holes **Coil.Lock**
+Wind all AWG 28 Copper in the coil. There are holes in the coil for up to two coils.
+It's recommended to fill the whole coil with copper wire. The more, the better.
 
 ### Circuit itens
 * 1 x 555 CI
@@ -81,7 +90,7 @@ Available in **/schematic**.
 * 1 x 1k Resistor
 * 1 x 680 Resistor
 * 1 x 4.7 Resistor
-* 1 x Breadboard
+* 1 x Breadboard or PCB
 * 1 x 1nF Capacitor
 * 1 x 10nF Capacitor
 * 1 x 10uF Electrolytic Capacitor
