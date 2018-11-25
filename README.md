@@ -37,26 +37,27 @@ Available in **/schematic**.
 	* Channel A (Yellow) - Batteries voltage
 	* Channel B (Blue) - Voltage across 10Ohm resistor before ground (=Amps / 10).
 
-## Results
+## Preliminary Results
 
-### Full Cycle
-![Image of Voltage in Full-Cycle](/results/Full-Cycle-V.png)
+![Image of cycle Fire/Blank](/results/FBS-Cycle-Batteries.png)
 
-![Image of Voltage in Full-Cycle](/results/Full-Cycle-mA.png)
+This scope shot show both battery voltage and current in the activation zone.
+In the first part, there is energy consumption from the batteries because voltage goes down and current goes up.
+However, this trend is averted by the induced current in the coil from the magnets. 
+Current is reversed and voltage recovers and goes even above the batteries charged voltage. So, batteries are being charged in the middle part.
+In the last part, the induced current decreases and energy consumption from the batteries is resumed until it leaves the activation zone.
 
-![Image of Voltage in Full-Cycle](/results/Full-Cycle-W.png)
+![Image of Voltage in Full-Cycle](/results/FBS-Cycle-Batteries-V.png)
 
-### Motor Cycle
-![Image of Voltage in Full-Cycle](/results/Motor-Cycle-V.png)
 
-![Image of mAmps in Full-Cycle](/results/Motor-Cycle-mA.png)
 
-### Feedback Cycle
-![Image of Voltage in Full-Cycle](/results/Feedback-Cycle-V.png)
+![Image of Voltage in Full-Cycle](/results/FBS-Cycle-Batteries-mA.png)
 
-![Image of mAmps in Full-Cycle](/results/Feedback-Cycle-mA.png)
+![Image of Voltage in Full-Cycle](/results/Batteries-Consumption-1-Closeup.png)
 
-![Image of Voltage in Full-Cycle](/results/Feedback-Cycle-W.png)
+![Image of mAmps in Full-Cycle](/results/Batteries-Consumption-1-Closeup.png)
+
+![Image of Voltage in Full-Cycle](/results/Batteries-Feedback-Closeup.png)
 
 
 ## Building Instructions
