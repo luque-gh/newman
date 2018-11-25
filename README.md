@@ -41,7 +41,7 @@ Available in **/schematic**.
 
 ## Preliminary Results
 
-![Image of cycle Fire/Blank](/results/FBS-Cycle-Batteries.png)
+![Fire/Blank/Short Out cycle](/results/FBS-Cycle.png)
 
 This scope shot show both battery voltage (yellow) and current (blue) in the activation zone.
 In the first part, there is energy consumption from the batteries because voltage goes down and current goes up.
@@ -50,26 +50,26 @@ Current is reversed and voltage recovers and goes even above the batteries charg
 Notice how important is the geometry, because in other machines like the Bedini's SSG, the current induced by the collapsing magnet field goes against the induced current by the magnes, slowing down the machine.
 In the last part, the induced current decreases and energy consumption from the batteries is resumed until it leaves the activation zone.
 
-![Image of Voltage in Full-Cycle](/results/FBS-Cycle-Batteries-V.png)
+![Fire/Blank/Short Out cycle - Voltage](/results/FBS-Cycle-Batteries-V.png)
 
 When energy is consumed, batteries voltages goes down to 178V.
 When recharge process takes place, batteries voltage goes up to 200V.
 
-![Image of Voltage in Full-Cycle](/results/FBS-Cycle-Batteries-mA.png)
+![Fire/Blank/Short Out cycle - Current](/results/FBS-Cycle-Batteries-mA.png)
 
 Likewise, current goes up to 19.6mA in the consumption and reverse to -15.2mA in the recharge phase
 (current must be divided by 10 because we are using 10 Ohm resistor).
 
-![Image of Voltage in Full-Cycle](/results/Batteries-Consumption.png)
+![Batteries consumption](/results/Batteries-Consumption.png)
 
-![Image of mAmps in Full-Cycle](/results/Batteries-Consumption-V.png)
+![Batteries consumption - Voltage](/results/Batteries-Consumption-V.png)
 
 Closeup view to batteries in consumption phase.
 Notice the 555 frequency is 17.24Khz which is much higher compared to frequency used by Newman is his experiments.
 
-![Image of Voltage in Full-Cycle](/results/Batteries-Recharge.png)
+![Batteries Recharge](/results/Batteries-Recharge.png)
 
-![Image of Voltage in Full-Cycle](/results/Batteries-Recharge-V.png)
+![Batteries Recharge - Voltage](/results/Batteries-Recharge-V.png)
 
 Closeup view to batteries in recharge phase. Frequency still the same as expected.
 
