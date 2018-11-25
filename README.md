@@ -5,7 +5,7 @@ This will be done in a **smaller scale** compared to the big machine Newman demo
 This machine follows most of Newman's design described in his book.
 
 However, it runs in a much lower voltage **~190VDC** compared to the one demonstrated by Newman (1500+ VDC).
-This lower voltage makes possible to use **mosfet transistor and zener diodes** to replace the mechanical commutator.
+This lower voltage makes possible to use **mosfet transistor and zener diodes** instead of a mechanical commutator.
 **Duty cycle and frequency are adjustable** to optimize the performance through a **555 timer**.
 Since **Newman's claims timing is very critical** for his invention, this gives much more flexibility to optimize compared to a mechanical commutator.
 
@@ -16,9 +16,9 @@ This machine uses **a solid-state circuit with a 555 timer** to alternate betwee
 ### FIRING/BLANK/SHORT OUT Cycle
 The first phase is **FIRING** which enable both mosfets to energise the coil through the battery bank.
 After that, the **BLANK** phase begins and cut the supply energy from the batteries, collapsing the field from the coil.
-The **BLANK** phase only ends when the voltage difference in the coil is above the reverse zener voltage.
+The **BLANK** phase only ends when the voltage difference in the coil is above the reverse zener voltage (>400V).
 When this voltage is achieved, the **SHORT OUT** begins.
-After that, a new **FIRING** phase begins reconnecting the battery bank to the coil.
+After that, a new **FIRING** phase begins reconnecting the battery bank to the coil again.
 
 The cycle is activated in the range 135° to 225° and determined by the printed part **Commutator-Disc-90Deg**.
 Each activation range requires an independent coil and circuit. In the test setup and videos, only one coil is used, but it is possibile to use two coils and activate in the range -45° to 45° as well.
@@ -33,8 +33,8 @@ Available in **/schematic**.
 * One coil activated in the range 135° to 225°.
 * **~190V VDC** input voltage for the coil (20 x 9V zinc-carbon batteries **OUT OF WARRANTY, BUT NOT DEPLETED**).
 * 9V zinc-cabon battery for the circuit controller.
-* Duty for FIRING is ~82.1%.
-* Frequency is ~17.24Khz.
+* 555 Duty+ for FIRING is ~82.1%.
+* 555 Frequency is ~17.24Khz.
 * 2-channels **Rigol DS1052E** Oscilloscope. 
 	* Channel A (Yellow) - Batteries voltage
 	* Channel B (Blue) - Voltage across 10Ohm resistor before ground (=Amps / 10).
@@ -66,17 +66,17 @@ Likewise, current goes up to 19.6mA in the consumption and reverse to -15.2mA in
 
 Closeup view to batteries in consumption phase.
 Notice the 555 frequency is 17.24Khz which is much higher compared to frequency used by Newman is his experiments.
-Although this is preliminary results, frequency seems to don't matter much except when lower frequencies are used that makes the back emf becames too strong for the rotor to overcome.
-On the other hand, duty cycle affects a lot, affecting both the energy consumption, recharge and rpm.
-Increasing duty for the FIRING phase increases consumption, recharge and speedup the rotor but not at the same rate. 
-So, the exact sweet spot that gives the maximum recharge and rpm and minimum consumption is unknown.
 
 ![Image of Voltage in Full-Cycle](/results/Batteries-Recharge.png)
 
 ![Image of Voltage in Full-Cycle](/results/Batteries-Recharge-V.png)
 
-Closeup view to batteries in recharge phase.
-Frequency still the same as expected.
+Closeup view to batteries in recharge phase. Frequency still the same as expected.
+
+Although this is preliminary results, frequency seems to don't matter much except when lower frequencies are used that makes the back emf becames too strong for the rotor to overcome.
+On the other hand, duty cycle affects a lot, affecting both the energy consumption, recharge and rpm.
+Increasing duty for the FIRING phase increases consumption, recharge and speedup the rotor but not at the same rate. 
+So, the exact sweet spot that gives the maximum recharge and rpm and minimum consumption is unknown.
 
 ## Conclusions so far...
 
@@ -97,7 +97,7 @@ So far, the results that I have achieved are not overunity, but they are at leas
 * Analyse relation among input and output parameters
 * Measure RPM
 * Running test with low farad capacitor as input voltage for the coil
-* Different geometry for PMBO 2018
+* PMBO 2018 using improved geometry
 
 ## Building Instructions
 
