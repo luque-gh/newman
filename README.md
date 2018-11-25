@@ -110,7 +110,7 @@ So far, the results that I have achieved are not overunity, but they are at leas
 * 2 x 6000 Full Ceramic Bearing 10x26x8mm
 * 2 x N52 45x45x20mm Block Magnet Strong Rare Earth Neodymium Magnet
 * ~5Kg AWG 28 Copper
-* ~500g PLA or ABS 
+* ~500g PLA or ABS **(DO NOT USE transparent or white color)**
 * 22AWG solid core wire for soldering the IRs
 
 Print all STL files in the directory **/model**.
