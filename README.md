@@ -41,7 +41,7 @@ Available in **/schematic**.
 
 ![Image of cycle Fire/Blank](/results/FBS-Cycle-Batteries.png)
 
-This scope shot show both battery voltage and current in the activation zone.
+This scope shot show both battery voltage (yellow) and current (blue) in the activation zone.
 In the first part, there is energy consumption from the batteries because voltage goes down and current goes up.
 However, this trend is averted by the induced current in the coil from the magnets. 
 Current is reversed and voltage recovers and goes even above the batteries charged voltage. So, batteries are being charged in the middle part.
@@ -49,9 +49,13 @@ In the last part, the induced current decreases and energy consumption from the 
 
 ![Image of Voltage in Full-Cycle](/results/FBS-Cycle-Batteries-V.png)
 
-
+When energy is consumed, batteries voltages goes down to 178V.
+When recharge process takes place, batteries voltage goes up to 200V.
 
 ![Image of Voltage in Full-Cycle](/results/FBS-Cycle-Batteries-mA.png)
+
+Likewise, current goes up to 19.6mA in the consumption and reverse to -15.2mA in the recharge phase
+(current must be divided by 10 because we are using 10 Ohm resistor).
 
 ![Image of Voltage in Full-Cycle](/results/Batteries-Consumption-1-Closeup.png)
 
