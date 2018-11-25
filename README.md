@@ -111,12 +111,13 @@ So far, the results that I have achieved are not overunity, but they are at leas
 * 2 x N52 45x45x20mm Block Magnet Strong Rare Earth Neodymium Magnet
 * ~5Kg AWG 28 Copper
 * ~500g PLA or ABS 
-* 22AWG solid core wire for soldering the IR
+* 22AWG solid core wire for soldering the IRs
 
 Print all STL files in the directory **/model**.
 Put together **Coil.Inner and Coil.Outer** and insert in both holes **Coil.Lock**
 Wind all AWG 28 Copper in the coil. There are holes in the coil for up to two coils. It's recommended to fill the whole coil with copper wire. The more, the better.
-22AWG must be solderd in IR sensors and emitters (only a par is required for this test). IR sensor and emmiter must be put in **Coil.BL-4xLR** in any spot facing each other. Glue the IR Sensor with hot glue.
+22AWG must be solderd in IR sensors and emitters (only a par is required for this test). IR sensor and emmiter must be put in **Coil.BL-4xLR** in any spot facing each other.
+Glue the IR sensor and emitter with hot glue in the **Coil.BL-4xLR**.
 
 ### Circuit itens
 * 1 x 555 CI
