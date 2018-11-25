@@ -1,4 +1,4 @@
-# Newman alternative
+# Newman alternative - Small scale without mechanical commutator 
 ## Introduction 
 The objective of this project is to **reproduce some claims made by Joseph Newman about his energy machine**.
 This will be done in a **smaller scale** compared to the big machine Newman demonstrated.
@@ -31,7 +31,7 @@ Available in **/schematic**.
 
 ## Test Setup
 * One coil activated in the range 135° to 225°.
-* **~190V VDC** input voltage for the coil (20 x 9V zinc-carbon batteries).
+* **~190V VDC** input voltage for the coil (20 x 9V zinc-carbon batteries **OUT OF WARRANTY, BUT NOT DEPLETED**).
 * 9V zinc-cabon battery for the circuit controller.
 * Duty for FIRING is ~82.1%.
 * Frequency is ~17.24Khz.
@@ -88,26 +88,35 @@ Although there are too many input variables to deal with:
 * Magnet size and strength
 
 **It's clear that Newman's invention does recharge the batteries when running**.
-Although I am using a solid state circuit instead of a mechanical commutar, it tries to mimic the working of the mechanical commutator described by Newman.
+Although I am using a solid state circuit instead of a mechanical commutator, it tries to mimic the working of the mechanical commutator described by Newman.
 So far, the results that I have achieved are not overunity, but they are at least interesting and they can be improved.
+
+## Things to do in future...
+
+* More tests with different input parameters
+* Analyse relation among input and output parameters
+* Measure RPM
+* Running test with low farad capacitor as input voltage for the coil
+* Different geometry for PMBO 2018
 
 ## Building Instructions
 
 ### Requirement
 * 3D Printer
 * Soldering tools
+* Hot glue gun
 
 ### Assembly itens
 * 2 x 6000 Full Ceramic Bearing 10x26x8mm
 * 2 x N52 45x45x20mm Block Magnet Strong Rare Earth Neodymium Magnet
-* 5Kg AWG 28 Copper 
-* 500g PLA or ABS 
-* 22AWG Solid core wire
+* ~5Kg AWG 28 Copper
+* ~500g PLA or ABS 
+* 22AWG solid core wire for soldering the IR
 
 Print all STL files in the directory **/model**.
 Put together **Coil.Inner and Coil.Outer** and insert in both holes **Coil.Lock**
-Wind all AWG 28 Copper in the coil. There are holes in the coil for up to two coils.
-It's recommended to fill the whole coil with copper wire. The more, the better.
+Wind all AWG 28 Copper in the coil. There are holes in the coil for up to two coils. It's recommended to fill the whole coil with copper wire. The more, the better.
+22AWG must be solderd in IR sensors and emitters (only a par is required for this test). IR sensor and emmiter must be put in **Coil.BL-4xLR** in any spot facing each other. Glue the IR Sensor with hot glue.
 
 ### Circuit itens
 * 1 x 555 CI
