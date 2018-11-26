@@ -119,7 +119,7 @@ Wind all AWG 28 Copper in the coil. There are holes in the coil for up to two co
 22AWG must be solderd in IR sensors and emitters (only a par is required for this test). IR sensor and emmiter must be put in **Coil.BL-4xLR** in any spot facing each other.
 Glue the IR sensor and emitter with hot glue in the **Coil.BL-4xLR**.
 
-### Circuit itens
+### Circuit items
 * 1 x 555 CI
 * 1 x 2N2222
 * 1 x 2N3906
@@ -138,4 +138,4 @@ Glue the IR sensor and emitter with hot glue in the **Coil.BL-4xLR**.
 * 1 x 10uF Electrolytic Capacitor
 * 1+ x IR TIL32
 * 1+ x IR TIL78
-* 13+ x 9V Zinc-Carbon Battery
+* 21+ x 9V Zinc-Carbon Battery
